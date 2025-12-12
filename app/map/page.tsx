@@ -10,12 +10,6 @@ export default function MapPage() {
     const { user, loading } = useAuth();
     const router = useRouter();
 
-    useEffect(() => {
-        if (!loading && !user) {
-            router.push("/login");
-        }
-    }, [user, loading, router]);
-
     if (loading) return <div>Loading...</div>;
 
     return (
@@ -23,10 +17,12 @@ export default function MapPage() {
             <h1 className="text-2xl font-bold mb-6">Trip Map</h1>
             <TravelMap />
 
-            <div className="mt-8">
-                <h2 className="text-xl font-semibold mb-4">Add a Place</h2>
-                <PoiForm />
-            </div>
+            {user && (
+                <div className="mt-8">
+                    <h2 className="text-xl font-semibold mb-4">Add a Place</h2>
+                    <PoiForm />
+                </div>
+            )}
         </div>
     );
 }

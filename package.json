@@ -10,19 +10,23 @@
   },
   "dependencies": {
     "@google-cloud/vertexai": "^1.10.0",
+    "@googlemaps/markerclusterer": "^2.6.2",
     "@radix-ui/react-label": "^2.1.8",
     "@radix-ui/react-slot": "^1.2.4",
     "@vis.gl/react-google-maps": "^1.7.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
     "exifreader": "^4.33.1",
     "firebase": "^12.6.0",
     "firebase-admin": "^13.6.0",
+    "firebase-tools": "^15.0.0",
     "lucide-react": "^0.561.0",
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
