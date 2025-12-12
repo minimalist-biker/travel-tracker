@@ -44,8 +44,8 @@ export default function BlogPage() {
     return (
         <div className="container mx-auto p-4 max-w-2xl">
             <header className="text-center mb-12 mt-8">
-                <h1 className="text-4xl font-bold text-slate-900 mb-2">Our Van Life Journey</h1>
-                <p className="text-slate-600">Follow along as we explore from Quebec to Mexico.</p>
+                <h1 className="text-4xl font-bold text-slate-900 mb-2">Garron and Mel&apos;s Journey</h1>
+                <p className="text-slate-600">Follow along on our indefinite van life adventure.</p>
             </header>
 
             <div className="space-y-8">
